@@ -7,13 +7,13 @@ import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+// import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Inventores',
   ignoreTitleTemplate: true,
 };
 ---
@@ -23,79 +23,69 @@ const metadata = {
 
   <Hero
     actions={[
-      {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-      { text: 'Learn more', href: '#features' },
+
+      { text: 'Ver más', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/curso2.jpg', alt: 'Clase de Impresión 3D' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
+      Laboratorio de Inventores:
+      <span class="text-accent dark:text-white highlight"> Impresión 3D e inovación tecnológica</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+      Contamos con alrededor de 21 impresoras 3D de tecnología FDM y 3 impresoras de resina con resolución 4k.
+       Ven a hacer realidad tus proyectos de robótica, biomédica, mecánica, programación y más. 
+       <br>
+       Te invitamos a ser un Inventor, realizar tus prácticas profesionales  servicio social acompañado de
+        nuestro personal especializado.
     </Fragment>
   </Hero>
-
   <!-- Note Widget ******************* -->
 
   <Note />
-
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    tagline="Servicios"
+    title="Lo que el laboratorio tiene para ofrecerte"
+    subtitle="Al ser un laboratorio multidiciplinario contamos con variedad de alumnos próximo a egresar de diferentes carreras que te pueden capacitar y apoyar en tecnologías de impresión 3D, modelado, desarrollo web y de videojuegos, robótica, electrónica, drones y más."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Solicitud de impresión de modelos 3D',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+          'Solicita la impresión de tus modelos 3D con nosotros. Te garantizamos calidad y precisión en cada detalle.',
         icon: 'tabler:brand-tailwind',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Capacitación de uso de impresoras 3D',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+        'Aprende a utilizar eficientemente las impresoras 3D con nuestro programa de capacitación. Dominarás todas las funciones y técnicas necesarias.',
         icon: 'tabler:components',
       },
       {
-        title: 'Best Practices',
+        title: 'Creación de modelos digitales 3D',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
+          'Diseñamos modelos digitales 3D a medida según tus necesidades. Transformamos tus ideas en modelos tridimensionales sorprendentes.',
         icon: 'tabler:list-check',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Creación de sistemas web',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+          'Desarrollamos sistemas web innovadores y personalizados para potenciar tu presencia en línea. Aprovecha la tecnología para alcanzar tus metas.',
         icon: 'tabler:rocket',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Capacitación de desarrollo de videojuegos',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
+          "Aprende las habilidades fundamentales y avanzadas para el desarrollo de videojuegos. Impulsamos tu creatividad para que construyas experiencias únicas.",
         icon: 'tabler:arrows-right-left',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Capacitación de app de realidad virtual',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
+          'Sumérgete en el mundo de la realidad virtual con nuestra capacitación. Desarrolla aplicaciones inmersivas y descubre nuevas posibilidades.',
         icon: 'tabler:bulb',
       },
     ]}
@@ -104,34 +94,35 @@ const metadata = {
   <!-- Content Widget **************** -->
 
   <Content
+  id = 'content'
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Proyectos"
+    title="Confianos tu proyecto modular o proyecto personal"
     items={[
       {
-        title: 'Built on top of Astro 4.0',
+        title: 'Más de 3700 Impresiónes realizadas',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'El fuerte del laboratorio es la impresión 3D en filamente y resina por lo que somos expertos en diseñar, imprimir y constuir prototipos y proyectos físicos con las mejores caracteristicas',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Más de 150 cursos y clases impartidas',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'Compartir el conocimiento adquirido en la universidad es importante para nosotros los Inventores, te invitamos a participar en los eventos que organizamos como cursos, clases, conferencias y más.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Más de 300 proyectos realizados',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Más de 300 alumnos y docentes han confiado en nosotros para llevar a cabo sus ideas y proyetos. Acercate a platicarnos sobre ti y tus ideas, te aseguramos que te ayudaremos que sean tangibles.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: '~/assets/images/proyectos.jpg',
       alt: 'Colorful Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Tenemos más de 3 años de experiencia con proyectos universitarios</h3>
+      Contamos con cientos de proyectos completados de manera exitosa que nos respaldan con la mejor calidad en el plantel.
     </Fragment>
 
     <Fragment slot="bg">
@@ -139,172 +130,93 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Content Widget **************** -->
-
-  <Content
-    isAfterContent
-    items={[
-      {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
-      },
-      {
-        title: 'Multiple layout possibilities',
-        description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
-      },
-      {
-        title: 'Fully responsive design',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
-      {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
-    }}
-  >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'Enhanced user engagement',
-        description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
-      },
-      {
-        title: 'Continuous improvement',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
-      },
-      {
-        title: 'Time and resource efficiency',
-        description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
-      },
-      {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
-    }}
-  >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
 
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="¿Cómo imprimir en el laboratorio?"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Paso 1: <span class="font-medium">Plantea una idea para tu proyecto</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
+          "Se creativo al imaginar y proponer un proyecto, si no tienes ideas podemos ayudarte a crear algo nuevo.",
         icon: 'tabler:package',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</em>',
+        title: 'Paso 2: <span class="font-medium">Escribenos o ven a platicarnos</em>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
+          "Visita el laboratorio y llena nuestro formulario para recopilar informacion de tu proyecto y así poder entregarte la mejor calidad posible de acuerdo a tus necesidades. ",
         icon: 'tabler:letter-case',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Paso 3: <span class="font-medium">Permitenos aportar, diseñar e imprimir tu proyecto </span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+          'El resto dejanoslo a nosotros, tenemos personal capacitado para trabajar todo tipo de proyectos, te recomendamos darle seguimiento para que este al tanto de las actualizaciones de tu proyecto.',
         icon: 'tabler:paint',
       },
       {
-        title: 'Ready!',
+        title: '¡Listo! Ya puedes disfrutar y seguir trabajando con tu proyecto impreso en 3D',
         icon: 'tabler:check',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      src: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80",
+      alt: 'Proyecto impreso en 3D',
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
+    title="Servicios"
+    subtitle="Como laboratorio multiciplinario nos centramos en varias áreas de desarrollo e inovación."
+    tagline="Conoce lo que hacemos"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
+        title: 'Solicitud de impresión de modelos 3D',
+        description: "Solicita la impresión de tus modelos 3D con nosotros. Te garantizamos calidad y precisión en cada detalle.",
         icon: 'flat-color-icons:approval',
       },
       {
-        title: 'Content',
+        title: 'Capacitación de uso de impresoras 3D',
         description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
+          "Aprende a utilizar eficientemente las impresoras 3D con nuestro programa de capacitación. Dominarás todas las funciones y técnicas necesarias.",
+          icon: 'flat-color-icons:approval',
       },
       {
-        title: 'Call-to-Action',
+        title: 'Creación de modelos digitales 3D',
         description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
+          'Diseñamos modelos digitales 3D a medida según tus necesidades. Transformamos tus ideas en modelos tridimensionales sorprendentes.',
+        icon: 'flat-color-icons:approval',
       },
       {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
+        title: 'Creación de sistemas web',
         description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
+          "Desarrollamos sistemas web innovadores y personalizados para potenciar tu presencia en línea. Aprovecha la tecnología para alcanzar tus metas.",
+          icon: 'flat-color-icons:approval',
       },
       {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
+        title: 'Capacitación de desarrollo de videojuegos',
+        description:
+          'Aprende las habilidades fundamentales y avanzadas para el desarrollo de videojuegos. Impulsamos tu creatividad para que construyas experiencias únicas.',
+          icon: 'flat-color-icons:approval',
       },
+      {
+        title: 'Capacitación de app de realidad virtual',
+        description: 'Sumérgete en el mundo de la realidad virtual con nuestra capacitación. Desarrolla aplicaciones inmersivas y descubre nuevas posibilidades.',
+        icon: 'flat-color-icons:approval',
+      },
+      {
+        title: 'Capacitación de desarrollo de aplicación interactiva',
+        description: 'Conviértete en un experto en el desarrollo de aplicaciones interactivas. Aprende a crear experiencias digitales atractivas y funcionales.',
+        icon: 'flat-color-icons:approval',
+      },
+      {
+        title: 'Creación de aplicaciones de realidad virtual (Próximamente)',
+        description:
+          'Estamos trabajando en nuevas experiencias de realidad virtual. Pronto podrás disfrutar de aplicaciones que te transportarán a mundos increíbles.',
+          icon: 'flat-color-icons:approval',
+      }
     ]}
   >
     <Fragment slot="bg">
@@ -312,88 +224,71 @@ const metadata = {
     </Fragment>
   </Features2>
 
-  <!-- HighlightedPosts Widget ******* -->
-
-  <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
-  />
+  
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
-    tagline="FAQs"
+    title="Preguntas frecuentes"
+    id = "faqs"
+    subtitle="Algunas de las dudas que tienen los aspirantes ser nuevos Inventores, no dudes en dejarnos saber su dudas a través de nuestros contactos"
+    tagline="No te quedes con la duda"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: '1. ¿Qué servicios ofrece su laboratorio de impresión 3D?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          "Nuestro laboratorio de impresión 3D ofrece una amplia gama de servicios, incluyendo la impresión de prototipos, piezas personalizadas, y objetos decorativos. También brindamos asesoría técnica y soporte en el diseño 3D para asegurar que sus proyectos sean de la más alta calidad.",
       },
       {
-        title: 'What do I need to start?',
+        title: '2. ¿Qué tipos de cursos de capacitación en impresión 3D tienen disponibles?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'Ofrecemos cursos de capacitación para todos los niveles de experiencia, desde principiantes hasta avanzados. Nuestros cursos cubren desde los fundamentos del modelado 3D y la operación básica de impresoras 3D, hasta técnicas avanzadas de diseño y mantenimiento de equipos.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: "3. ¿Qué plataformas de videojuegos desarrollan o apoyan?",
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          "Nos especializamos en el desarrollo y soporte de videojuegos para múltiples plataformas, incluyendo PC, consolas (como PlayStation y Xbox), y dispositivos móviles (iOS y Android). También brindamos asesoría en la optimización de juegos y en la integración de tecnologías de realidad virtual y aumentada.",
       },
       {
-        title: "What's something that you don't understand?",
+        title: '4. ¿Cómo pueden ayudarme a desarrollar una página web?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          "Nuestro equipo de desarrollo web ofrece servicios completos que incluyen diseño y desarrollo de sitios web, optimización para motores de búsqueda (SEO), y soporte continuo. Trabajamos con una variedad de tecnologías y plataformas, como HTML, CSS, JavaScript, WordPress, y más, para asegurar que su página web sea funcional y atractiva.",
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: '5. ¿Puedo visitar su laboratorio para ver las impresoras 3D en acción?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          "Sí, ofrecemos visitas guiadas a nuestro laboratorio para que pueda ver nuestras impresoras 3D en funcionamiento. Durante la visita, nuestro personal estará disponible para responder preguntas y proporcionar demostraciones en vivo de nuestros procesos de impresión.",
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: '6. ¿Qué experiencia necesitan tener los estudiantes para inscribirse en los cursos de impresión 3D?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
-      },
+          "No se requiere experiencia previa para inscribirse en nuestros cursos de nivel básico. Para los cursos intermedios y avanzados, es recomendable tener un conocimiento básico de diseño 3D y operación de impresoras. Ofrecemos evaluaciones previas para ayudar a determinar el nivel adecuado para cada estudiante.",
+      }
     ]}
   />
 
   <!-- Stats Widget ****************** -->
 
   <Stats
+
     stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
+      { title: 'Impresiónes realizadas', amount: '+4000' },
+      { title: 'Cursos impartidos', amount: '+150' },
+      { title: 'Páginas Web creadas', amount: '+30' },
+      { title: 'Videojuegos creados', amount: '+15' },
     ]}
   />
 
   <!-- CallToAction Widget *********** -->
 
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-    ]}
-  >
+  <CallToAction>
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Laboratorio de inventores</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Blvd. Gral. Marcelino García Barragán 1421, Olímpica, 44430 Guadalajara, Jal. CUCEI Módulo N <br class="hidden md:inline" />Lunes a Viernes de 8am - 8pm / Sabados de 9am a 3pm
     </Fragment>
   </CallToAction>
 </Layout>

@@ -5,24 +5,24 @@ import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: 'Contacto',
 };
 ---
 
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Contact" title="Let's Connect!" />
+  <HeroText tagline="Vamos a conocernos más" title="¡Contactanos!" />
 
   <ContactUs
     id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
+    title="Dejamos un mensaje"
+    subtitle="Para resolver dudas más rápido puedes conocer nuestro apartado de preguntas frecuentes"
     inputs={[
       {
         type: 'text',
         name: 'name',
-        label: 'Name',
+        label: 'Nombre',
       },
       {
         type: 'email',
@@ -31,47 +31,47 @@ const metadata = {
       },
     ]}
     textarea={{
-      label: 'Message',
+      label: 'Mensaje',
     }}
     disclaimer={{
       label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+        'Al enviar este formulario acepto que mi información sea guardada en una base de datos.',
     }}
-    description="Our support team typically responds within 24 business hours."
+    description="Nuestro equipo normalmente responde en un lapso de 24 horas hábiles."
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="We are here to help!"
+    title="Estamos aquí para ayudarte"
     items={[
       {
-        title: 'General support',
-        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
+        title: 'Dudas sobre impresión 3D',
+        description: `Ponte en contacto con nosotros y resolveremos cualquier duda o asesoramiento en esta tecnología. Tambien puedes hacer una visita guiada en cualquier momento que quieras visitarnos.`,
       },
       {
-        title: 'Contact sales',
+        title: 'Forma parte de nuestro equipo',
         description:
-          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
+          'La mayoría de nuestro equipo somos practicantes, prestadores de servicio social y apasionados por la tecnología, ciencia e ingeniería, preguntamos como ser parte de este gran equipo. Te esperamos.',
       },
       {
-        title: 'Technical support',
+        title: '¿Ya has trabajado con nosostros?',
         description:
-          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
+          'Déjanos saber como ha sido tu experiencia al trabajar con nuestro equipo. Te invitamos a dejar un comentario, lo tomaremos en cuenta para nuestro crecimiento como laboratorio y comunidad.',
       },
       {
         title: 'Phone',
-        description: '+1 (234) 567-890',
-        icon: 'tabler:headset',
+        description: '3320093479',
+        icon: 'tabler:phone',
       },
       {
         title: 'Email',
-        description: 'contact@support.com',
+        description: 'lab.inventores@cucei.udg.mx',
         icon: 'tabler:mail',
       },
       {
-        title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
+        title: 'Ubicación',
+        description: 'Blvd. Gral. Marcelino García Barragán 1421, Olímpica, 44430 Guadalajara, Jal. CUCEI Módulo N',
         icon: 'tabler:map-pin',
       },
     ]}

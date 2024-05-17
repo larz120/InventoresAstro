@@ -1,13 +1,13 @@
 ---
 import Features2 from '~/components/widgets/Features2.astro';
-import Features3 from '~/components/widgets/Features3.astro';
+// import Features3 from '~/components/widgets/Features3.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Stats from '~/components/widgets/Stats.astro';
-import Steps2 from '~/components/widgets/Steps2.astro';
+// import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'About us',
+  title: 'Nosotros',
 };
 ---
 
@@ -15,214 +15,86 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="About us"
+    tagline="Sobre nosotros"
     image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: 'data:image/jpeg;base64,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',
       alt: 'Caos Image',
     }}
   >
-    <Fragment slot="title">
-      Elevate your online presence with our <br />
-      <span class="text-accent dark:text-white highlight"> Beautiful Website Templates</span>
+  <Fragment slot="title">
+      ¿Quienes somos?
     </Fragment>
 
     <Fragment slot="subtitle">
-      Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec
-      quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus.
-      Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.
+      Somos un espacio donde tus ideas podrán cobrar vida, contamos con diferentes servicios los cuales ayudaran a tus proyectos a salir adelante, si necesitas alguno solo debe darle clic al icono, este te llevara a un formulario para capturar tu solicitud, nosotros nos podremos en contacto contigo para agendar un cita y darle seguimiento.
     </Fragment>
   </Hero>
 
   <!-- Stats Widget ****************** -->
 
   <Stats
-    title="Statistics about us"
-    stats={[
-      { title: 'Offices', amount: '4' },
-      { title: 'Employees', amount: '248' },
-      { title: 'Templates', amount: '12' },
-      { title: 'Awards', amount: '24' },
-    ]}
-  />
 
-  <!-- Features3 Widget ************** -->
+  stats={[
+    { title: 'Impresiónes realizadas', amount: '+4000' },
+    { title: 'Cursos impartidos', amount: '+150' },
+    { title: 'Páginas Web creadas', amount: '+30' },
+    { title: 'Videojuegos creados', amount: '+15' },
+  ]}
+/>
 
-  <Features3
-    title="Our templates"
-    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
-    columns={3}
-    isBeforeContent={true}
-    items={[
-      {
-        title: 'Educational',
-        description:
-          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Interior Design',
-        description:
-          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Photography',
-        description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
-        icon: 'tabler:template',
-      },
-    ]}
-  />
-
-  <!-- Features3 Widget ************** -->
-
-  <Features3
-    columns={3}
-    isAfterContent={true}
-    items={[
-      {
-        title: 'E-commerce',
-        description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Blog',
-        description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Business',
-        description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Branding',
-        description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Medical',
-        description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
-        icon: 'tabler:template',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Colorful Image',
-    }}
-  />
-
-  <!-- Steps2 Widget ****************** -->
-
-  <Steps2
-    title="Our values"
-    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
-    items={[
-      {
-        title: 'Customer-centric approach',
-        description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
-      },
-      {
-        title: 'Constant Improvement',
-        description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
-      },
-      {
-        title: 'Ethical Practices',
-        description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
-      },
-    ]}
-  />
-
-  <!-- Steps2 Widget ****************** -->
-
-  <Steps2
-    title="Achievements"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
-    isReversed={true}
-    callToAction={{
-      text: 'See more',
-      href: '/',
-    }}
-    items={[
-      {
-        title: 'Global reach',
-        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
-        icon: 'tabler:globe',
-      },
-      {
-        title: 'Positive customer feedback and reviews',
-        description:
-          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
-        icon: 'tabler:message-star',
-      },
-      {
-        title: 'Awards and recognition as industry experts',
-        description:
-          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
-        icon: 'tabler:award',
-      },
-    ]}
-  />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Our locations"
-    tagline="Find us"
-    columns={4}
-    items={[
-      {
-        title: 'EE.UU',
-        description: '1234 Lorem Ipsum St, 12345, Miami',
-      },
-      {
-        title: 'Spain',
-        description: '5678 Lorem Ipsum St, 56789, Madrid',
-      },
-      {
-        title: 'Australia',
-        description: '9012 Lorem Ipsum St, 90123, Sydney',
-      },
-      {
-        title: 'Brazil',
-        description: '3456 Lorem Ipsum St, 34567, São Paulo',
-      },
-    ]}
-  />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Technical Support"
-    tagline="Contact us"
-    columns={2}
-    items={[
-      {
-        title: 'Chat with us',
-        description:
-          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
-        icon: 'tabler:messages',
-      },
-      {
-        title: 'Call us',
-        description:
-          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
-        icon: 'tabler:headset',
-      },
-    ]}
-  />
-</Layout>
+<Features2
+title="Servicios"
+subtitle="Como laboratorio multiciplinario nos centramos en varias áreas de desarrollo e inovación."
+tagline="Conoce lo que hacemos"
+items={[
+  {
+    title: 'Solicitud de impresión de modelos 3D',
+    description: "Solicita la impresión de tus modelos 3D con nosotros. Te garantizamos calidad y precisión en cada detalle.",
+    icon: 'flat-color-icons:approval',
+  },
+  {
+    title: 'Capacitación de uso de impresoras 3D',
+    description:
+      "Aprende a utilizar eficientemente las impresoras 3D con nuestro programa de capacitación. Dominarás todas las funciones y técnicas necesarias.",
+      icon: 'flat-color-icons:approval',
+  },
+  {
+    title: 'Creación de modelos digitales 3D',
+    description:
+      'Diseñamos modelos digitales 3D a medida según tus necesidades. Transformamos tus ideas en modelos tridimensionales sorprendentes.',
+    icon: 'flat-color-icons:approval',
+  },
+  {
+    title: 'Creación de sistemas web',
+    description:
+      "Desarrollamos sistemas web innovadores y personalizados para potenciar tu presencia en línea. Aprovecha la tecnología para alcanzar tus metas.",
+      icon: 'flat-color-icons:approval',
+  },
+  {
+    title: 'Capacitación de desarrollo de videojuegos',
+    description:
+      'Aprende las habilidades fundamentales y avanzadas para el desarrollo de videojuegos. Impulsamos tu creatividad para que construyas experiencias únicas.',
+      icon: 'flat-color-icons:approval',
+  },
+  {
+    title: 'Capacitación de app de realidad virtual',
+    description: 'Sumérgete en el mundo de la realidad virtual con nuestra capacitación. Desarrolla aplicaciones inmersivas y descubre nuevas posibilidades.',
+    icon: 'flat-color-icons:approval',
+  },
+  {
+    title: 'Capacitación de desarrollo de aplicación interactiva',
+    description: 'Conviértete en un experto en el desarrollo de aplicaciones interactivas. Aprende a crear experiencias digitales atractivas y funcionales.',
+    icon: 'flat-color-icons:approval',
+  },
+  {
+    title: 'Creación de aplicaciones de realidad virtual (Próximamente)',
+    description:
+      'Estamos trabajando en nuevas experiencias de realidad virtual. Pronto podrás disfrutar de aplicaciones que te transportarán a mundos increíbles.',
+      icon: 'flat-color-icons:approval',
+  }
+]}
+>
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+</Fragment>
+</Features2>
